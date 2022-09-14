@@ -63,6 +63,8 @@ public class App {
         Bson deleteFilter = Filters.eq("name","Elon Musk");
         personalCollection.deleteOne(deleteFilter);
 
+        
+        //Delete operation
         Bson multipleDeletes = Filters.eq("country","England");
         personalCollection.deleteMany(multipleDeletes);
 
